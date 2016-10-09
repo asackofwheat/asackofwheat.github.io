@@ -1,0 +1,38 @@
+body{
+  background: url("assets/images/background.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; 
+}
+
+.navbar {
+  background: transparent;
+  border: 0;
+}
+
+.box {
+  height: auto;
+  width: 100%;
+  border-radius: 4px;
+  color: black;
+  margin-bottom: 18px;
+/*  background-color: rgba(255,255,255,0.2);*/
+}
+
+.image {
+  margin: 10px;
+  height: 100%;
+  width: 100%;
+}
+
+.description h4 {
+  font-size: 16px;
+  font-style: italic;
+}
+
+.about-image {
+  margin: 30px;
+  height: 70%;
+  width: 70%;
+}

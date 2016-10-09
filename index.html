@@ -1,7 +1,13 @@
-<DOCTYPE HTML>
-
-<html>
+<!DOCTYPE html>
+<html ng-app="Homepage">
 <head>
+  <title>asackofwheat.com</title>
+  <!-- Angular -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+  <!-- ui-router -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.min.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -12,50 +18,18 @@
   <!-- Latest compiled and minified JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <title>asackofwheat homepage</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-    <div class="section header">
-      <h1>Mike Lee</h1>
-      <h2>Full Stack Web Developer</h2>
-      <p>I love building things, improving my code, and playing tennis. Learn more about me below.</p>
-      <ul>
-        <a href="https://github.com/asackofwheat"><li>Github</li></a>
-        <a href="https://www.linkedin.com/in/michael-lee-1a85aa123"><li>LinkedIn</li></a>
-        <a href="https://medium.com/@asackofwheat"><li>Medium</li></a>
-      </ul>
-    </div>
-  <div class="container">
-    <div class="section about-me">
-      <h2>About Me</h2>
-      <p>I'm currently a student at the Viking Code School, an immersive full stack web development program. </p>
-    </div>
-    <div class="section portfolio">
-      <h2>Portfolio</h2>
-      <div class="portfolio-item">
-        <a href="https://morning-journey-10393.herokuapp.com/"><img src="flag.png"></a>
-        <a href="https://morning-journey-10393.herokuapp.com/"><h4>Project Danebook</h4></a>
-        <p>A social networking application akin to Facebook.</p>
-      </div>
-      <div class="portfolio-item">
-        <a href="http://applyapp.herokuapp.com/"><img src="school.jpeg"></a>
-        <a href="http://applyapp.herokuapp.com/"><h4>App.ly</h4></a>
-        <p>Application that taps into the data.gov College Scorecoard API to help students find the right college.</p>
-      </div>
-      <div class="portfolio-item">
-        <a href="https://warm-shore-63135.herokuapp.com/"><img src="bench.jpg"></a>
-        <a href="https://warm-shore-63135.herokuapp.com/"><h4>Park Place</h4></a>
-        <p>Guide to parks in San Francisco using the DataSF API.</p>
-      </div>
-      <div class="clearfix"></div>
-    </div>
-    <div class="section contact-me">
-      <h2>Contact Me</h2>
-      <p>Please feel free to <a href="mailto:asackofwheat@gmail.com">email me</a></p>
-    </div>
-  </div>
-    <div class="section footer">
-  </div>
+
+  <navbar></navbar>
+
+  <div ui-view class="container"></div>
+  <script type="text/javascript" src="app.js"></script>
 </body>
+
+
+<!-- directives -->
+<script src="directives/navbar.js"></script>
+
 </html>
