@@ -20,9 +20,5 @@ Homepage.config(['$stateProvider', '$urlRouterProvider', function($stateProvider
     url: '/about',
     templateUrl: '/templates/about.html'
   })
-  .state('contact', {
-    url: '/contact',
-    templateUrl: '/templates/contact.html'
-  })
 
 }]);

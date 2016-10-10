@@ -9,6 +9,9 @@ body{
 .navbar {
   background: transparent;
   border: 0;
+  text-transform:uppercase;
+  letter-spacing:.25em;
+  font-size:12px;
 }
 
 .box {
@@ -35,4 +38,43 @@ body{
   margin: 80px 30px 30px 30px;
   height: 70%;
   width: 70%;
+}
+
+.nav.navbar-nav.navbar-right li a {
+    color: white;
+}
+
+.navbar-inverse .navbar-brand{
+  color:#033F4D;
+}
+
+.photo img {
+  width: 300px;
+  border: solid 10px white;
+  float: right;
+}
+
+.homepage {
+  margin: 16% 0 0 12%;
+}
+
+.home-btn {
+  color:#033F4D;
+  font-weight: bold;
+  letter-spacing:.2em;
+  font-size: 20px;
+  width: 200px;
+  padding: 10px 0;
+  border-radius: 5px;
+  margin: 0 0 15px 0;
+  text-align: center;
+  background-color: rgba(255,255,255,0.4);
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.name{
+  margin-top:-30px;
 }
