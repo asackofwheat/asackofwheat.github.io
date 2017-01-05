@@ -1,0 +1,20 @@
+<div class="row">
+
+  <div class="col-xs-8 col-xs-offset-2">
+    <div class="maybe">
+      <form name="userForm" ng-submit="addData(); resetData(); addClick()">
+        <input class="form-control" type="number" placeholder="YES" ng-model="yes"><br>
+        <input class="form-control" type="number" placeholder="NO" ng-model="no"><br>
+        <input class="btn btn-primary" type="submit" value="Submit" ng-disabled="yes === no">
+      </form>
+      <br>
+      <input class="btn btn-secondary" type="submit" value="Show Results" ng-click="show = !show" ng-disabled="click < 2">
+      <br><br>
+      <div ng-show="show">
+        YES: {{data[0]}}<br>
+        NO: {{data[1]}}
+      </div>
+    </div>
+  </div>
+
+</div>

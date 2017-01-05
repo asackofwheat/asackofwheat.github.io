@@ -20,5 +20,10 @@ Homepage.config(['$stateProvider', '$urlRouterProvider', function($stateProvider
     url: '/about',
     templateUrl: '/templates/about.html'
   })
+  .state('maybe', {
+    url: '/maybe',
+    templateUrl: '/templates/maybe.html',
+    controller: 'MaybeCtrl'
+  })
 
 }]);
